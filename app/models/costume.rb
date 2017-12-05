@@ -1,2 +1,2 @@
-class Costume::ActiveRecord::Base
+class CreateCostume::ActiveRecord::Base
 end
