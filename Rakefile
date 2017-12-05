@@ -5,7 +5,7 @@ task :environment do
   ENV["ACTIVE_RECORD_ENV"] ||= "development"
   require_relative './config/environment'
 end
-
+  require_relative './config/environment'
 include ActiveRecord::Tasks
 DatabaseTasks.db_dir = 'db'
 DatabaseTasks.migrations_paths = 'db/migrate'
