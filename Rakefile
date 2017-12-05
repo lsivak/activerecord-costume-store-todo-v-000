@@ -1,9 +1,9 @@
 require 'active_record'
-require_relative './config/environment'
+
 
 task :environment do
   ENV["ACTIVE_RECORD_ENV"] ||= "development"
-  # require_relative './config/environment'
+  require_relative './config/environment'
 end
 
 include ActiveRecord::Tasks
