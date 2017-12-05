@@ -16,6 +16,11 @@ end
 DatabaseTasks.seed_loader = seed_loader.new
 load 'active_record/railties/databases.rake'
 
-task :console => :environment do
-  Pry.start
+# task :console => :environment do
+#   Pry.start
+# end
+task :console do
+  require 'irb'
+  ARGV.clear
+  IRB.start
 end
