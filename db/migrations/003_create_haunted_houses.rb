@@ -1,3 +1,4 @@
+require 'pry'
 class CreateHauntedHouses < ActiveRecord::Migration[4.2]
 
   def change
